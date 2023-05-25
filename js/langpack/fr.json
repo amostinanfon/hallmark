@@ -1,0 +1,14 @@
+{
+    "token":{
+        "Home":"ACCUEIL",
+        "FRENCH":"FRANCAIS",
+        "ENGLISH":"ANGLAIS",
+        "PORTUGESE":"PORTUGAIS",
+        "Create an account":"Créer un compte",
+        "Why Us":"Pourquoi nous ?",
+        "Services":"Services",
+        "Team":"équipe",
+        "Login":"se connecter",
+        "About":"à propos"
+    }
+}
