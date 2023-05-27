@@ -1,53 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
-.container{
+
+.slider {
+    height: 200px;
+    margin: auto;
+    position: relative;
     display: flex;
-    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(200px * 20);
+    animation: scroll 60s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 10));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 200px;
+    display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px;
+    perspective: 100px;
 }
 
-.container .coin-track{
-    display: flex;
+/* .slide-track .slide:nth-child(5) {
+    background-color: rgb(156, 32, 32);
+    color: rgb(248, 244, 244);
+}*/
+.slide-track .slide:nth-child(5) .subslide{
+    margin-left: 5px;
+    background-color: rgb(30, 36, 202);
+    color: white;
+} 
+
+.slide img{
+    width:50px;
+    height: 50px;
+    transition: transform 1s;
 }
 
-.container .coin-price{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 5px;
-    flex-wrap: wrap;
-    box-shadow: 0 0 3px #ccc;
+/* image hover effect */
+img:hover{
+    transform: translateZ(20px);
 }
 
-.container .coin-price div{
-    display: block; 
+
+/* Gradient Shadows */
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+    rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
 }
 
-.container .coin-price div h1{
-    font-size: 20px;
-    font-weight: bold;
+.slider::before {
+    left: 0;
+    top: 0;
 }
 
-.container .coin-price .logo {
-   width: 70px;
-   margin-right: 10px;
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
 }
 
-.container .coin-price .logo img{
-   width: 100%;
-}
+
+
+
