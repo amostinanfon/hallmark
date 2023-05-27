@@ -250,8 +250,11 @@ JQuery Class */
 .language-selected.change-fr::before{
   background-image: url('https://flagsapi.com/FR/shiny/64.png');
 }
-.language-selected.change-es::before{
+.language-selected.change-pt::before{
   background-image: url('https://flagsapi.com/PT/shiny/64.png');
+}
+.language-selected.change-es::before{
+  background-image: url('https://flagsapi.com/SP/shiny/64.png');
 }
 
 .language ul {
