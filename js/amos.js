@@ -78,49 +78,28 @@ var liveprice = {
 
   console.log(x1.data.slice(0,20));
 
- var y1 = x1.data.slice(0,20)
-  btc.innerHTML = Math.round(y1[0].quote.USD.price);
-  ether.innerHTML = Math.round(y1[1].quote.USD.price);
-  teth.innerHTML = Math.round(y1[2].quote.USD.price);
-  bnb.innerHTML = Math.round(y1[3].quote.USD.price);
-  usdc.innerHTML = Math.round(y1[4].quote.USD.price);
-  xrp.innerHTML = Math.round(y1[5].quote.USD.price);
-  cardano.innerHTML = Math.round(y1[6].quote.USD.price);
-  doge.innerHTML = Math.round(y1[7].quote.USD.price);
-  polygon.innerHTML = Math.round(y1[8].quote.USD.price);
-  solona.innerHTML = Math.round(y1[9].quote.USD.price);
-  tron.innerHTML = Math.round(y1[10].quote.USD.price);
-  litecoin.innerHTML = Math.round(y1[11].quote.USD.price);
-  polkadot.innerHTML = Math.round(y1[12].quote.USD.price);
-  binance.innerHTML = Math.round(y1[13].quote.USD.price);
-  shiba.innerHTML = Math.round(y1[14].quote.USD.price);
-  dai.innerHTML = Math.round(y1[15].quote.USD.price);
-  avalanche.innerHTML = Math.round(y1[16].quote.USD.price);
-  wbtc.innerHTML = Math.round(y1[17].quote.USD.price);
-  chainlink.innerHTML = Math.round(y1[18].quote.USD.price);
-  unus.innerHTML = Math.round(y1[19].quote.USD.price);
+  var y1 = x1.data.slice(0,20);
+  btc.innerHTML = parseFloat(y1[0].quote.USD.price.toFixed(3));
+  ether.innerHTML = parseFloat(y1[1].quote.USD.price.toFixed(3));
+  teth.innerHTML = parseFloat(y1[2].quote.USD.price.toFixed(3));
+  bnb.innerHTML = parseFloat(y1[3].quote.USD.price.toFixed(3));
+  usdc.innerHTML = parseFloat(y1[4].quote.USD.price.toFixed(3));
+  xrp.innerHTML = parseFloat(y1[5].quote.USD.price.toFixed(3));
+  cardano.innerHTML = parseFloat(y1[6].quote.USD.price.toFixed(3));
+  doge.innerHTML = parseFloat(y1[7].quote.USD.price.toFixed(3));
+  polygon.innerHTML = parseFloat(y1[8].quote.USD.price.toFixed(3));
+  solona.innerHTML = parseFloat(y1[9].quote.USD.price.toFixed(3));
+  tron.innerHTML = parseFloat(y1[10].quote.USD.price.toFixed(3));
+  litecoin.innerHTML = parseFloat(y1[11].quote.USD.price.toFixed(3));
+  polkadot.innerHTML = parseFloat(y1[12].quote.USD.price.toFixed(3));
+  binance.innerHTML = parseFloat(y1[13].quote.USD.price.toFixed(3));
+  shiba.innerHTML = parseFloat(y1[14].quote.USD.price.toFixed(3));
+  dai.innerHTML = parseFloat(y1[15].quote.USD.price.toFixed(3));
+  avalanche.innerHTML = parseFloat(y1[16].quote.USD.price.toFixed(3));
+  wbtc.innerHTML = parseFloat(y1[17].quote.USD.price.toFixed(3));
+  chainlink.innerHTML = parseFloat(y1[18].quote.USD.price.toFixed(3));
+  unus.innerHTML = parseFloat(y1[19].quote.USD.price.toFixed(3));
 });
 
         
-// var apikey= {key:'8eb38772-272b-4cc1-a770-179c0ae3d2a3'};
-// request(
-//   'GET',
-//   'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=' + apikey.key)
-//   .then((r1) => {
-//     var x1 = JSON.parse(r1.target.responseText);
-//     console.log(x1.data.slice(0,10))
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   })
-
-//   function request(method, url){
-//     return new Promise (function (resolve, reject) {
-//       var xhr = new XMLHttpRequest();
-//       xhr.open(method, url);
-//       xhr.onload = resolve;
-//       xhr.onerror = reject;
-//       xhr.send();
-//     })
-//   }
 

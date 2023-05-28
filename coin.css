@@ -1,26 +1,27 @@
 .amose {
     height: 30px;
     margin: auto;
-    /* position: relative; */
+    position: relative;
     display: flex;
     place-items: center;
     overflow: hidden;
 }
 
 .amos-track{
-    background-color: #2626b5;
+    background-color: #2020b5;
     display: flex;
-    width: calc(250px * 20);
-    animation: scroll 40s linear infinite;
+    width: calc(200px * 20);
+    animation: scroll 50s linear infinite;
 }
 
-.amos-track .amos .subslide {
-    color: rgb(255, 255, 255);
-    font-weight: 900;
+.amos-track .amos .subslide h3{
+    color: white;
+    font-weight: 600;
 }
 
 .amos-track:hover {
     animation-play-state: paused;
+    background-color: #141499;
 }
 
 @keyframes scroll{
@@ -28,13 +29,13 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 10));
+        transform: translateX(calc(-200px * 10));
     }
 }
 
 .amos {
     height: 100px;
-    width: 200px;
+    width: 165px;
     display: flex;
     align-items: center;
     
@@ -63,7 +64,12 @@ img:hover{
     font-size: 12px;
 }
 .amos .subslide h3:nth-child(2){
-    color: #fb4838;
+    color: #fb3838;
+    font-weight: 900;
+}
+
+.amos .subslide h3:nth-child(2) span{
+    color: #ffb325;
     font-weight: 900;
 }
 
