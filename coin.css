@@ -1,5 +1,5 @@
 .amose {
-    height: 40px;
+    height: 30px;
     margin: auto;
     /* position: relative; */
     display: flex;
@@ -8,11 +8,15 @@
 }
 
 .amos-track{
-    color: rgb(136, 7, 7);
-    background-color: #00bbf0;
+    background-color: #2626b5;
     display: flex;
     width: calc(250px * 20);
     animation: scroll 40s linear infinite;
+}
+
+.amos-track .amos .subslide {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
 }
 
 .amos-track:hover {
@@ -50,14 +54,17 @@ img:hover{
 
 .amos .subslide{
     display: flex;
-    font-size: 20px;
+    font-size: 10px;
+    padding-top: 5px;
+    text-align: center;
     gap: 5px;
 }
 .amos .subslide h3{
-    font-size: 15px;
+    font-size: 12px;
 }
 .amos .subslide h3:nth-child(2){
-    color: #3861FB;
+    color: #fb4838;
+    font-weight: 900;
 }
 
 
