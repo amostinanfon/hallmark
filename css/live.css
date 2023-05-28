@@ -35,9 +35,8 @@ body{
 
 .slide {
     height: 200px;
-    width: 250px;
+    width: 150px;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     padding: 15px;
     perspective: 100px;
@@ -62,6 +61,17 @@ img:hover{
     transform: translateZ(20px);
 }
 
+.slide .subslide{
+    display: flex;
+    font-size: 20px;
+    gap: 5px;
+}
+.slide .subslide h3{
+    font-size: 15px;
+}
+.slide .subslide h3:nth-child(2){
+    color: #3861FB;
+}
 
 /* Gradient Shadows */
 .slider::before,
@@ -70,7 +80,7 @@ img:hover{
     rgba(255, 255, 255, 0) 100%);
     content: '';
     height: 100%;
-    position: absolute;
+    /* position: absolute; */
     width: 15%;
     z-index: 2;
 }

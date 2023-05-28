@@ -182,7 +182,7 @@ a:focus {
 
 .header {
   background-color: #252525;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header-container {
@@ -190,9 +190,9 @@ a:focus {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
+} 
 
-a.logo {
+ a.logo {
   color: aliceblue;
   font-size: 2.25em;
   font-weight: 300;

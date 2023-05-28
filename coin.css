@@ -1,26 +1,21 @@
-body{
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-
-.slider {
-    height: 200px;
+.amose {
+    height: 40px;
     margin: auto;
-    position: relative;
+    /* position: relative; */
     display: flex;
     place-items: center;
     overflow: hidden;
 }
 
-.slide-track{
+.amos-track{
+    color: rgb(136, 7, 7);
+    background-color: #00bbf0;
     display: flex;
-    width: calc(200px * 20);
-    animation: scroll 60s linear infinite;
+    width: calc(250px * 20);
+    animation: scroll 40s linear infinite;
 }
 
-.slide-track:hover {
+.amos-track:hover {
     animation-play-state: paused;
 }
 
@@ -29,32 +24,22 @@ body{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-200px * 10));
+        transform: translateX(calc(-250px * 10));
     }
 }
 
-.slide {
-    height: 200px;
+.amos {
+    height: 100px;
     width: 200px;
     display: flex;
     align-items: center;
+    
     padding: 15px;
     perspective: 100px;
 }
 
-/* .slide-track .slide:nth-child(5) {
-    background-color: rgb(156, 32, 32);
-    color: rgb(248, 244, 244);
-}*/
-.slide-track .slide:nth-child(5) .subslide{
-    margin-left: 5px;
-    background-color: rgb(30, 36, 202);
-    color: white;
-} 
-
-.slide img{
-    width:50px;
-    height: 50px;
+img{
+    width:100%;
     transition: transform 1s;
 }
 
@@ -63,25 +48,25 @@ img:hover{
     transform: translateZ(20px);
 }
 
-
-/* Gradient Shadows */
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,
-    rgba(255, 255, 255, 0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
+.amos .subslide{
+    display: flex;
+    font-size: 20px;
+    gap: 5px;
+}
+.amos .subslide h3{
+    font-size: 15px;
+}
+.amos .subslide h3:nth-child(2){
+    color: #3861FB;
 }
 
-.slider::before {
+
+.amose::before {
     left: 0;
     top: 0;
 }
 
-.slider::after{
+.amose::after{
     right: 0;
     top: 0;
     transform: rotate(180deg);
