@@ -254,7 +254,7 @@ JQuery Class */
   background-image: url('https://flagsapi.com/PT/shiny/64.png');
 }
 .language-selected.change-es::before{
-  background-image: url('https://flagsapi.com/SP/shiny/64.png');
+  background-image: url('https://flagsapi.com/ES/flat/64.png');
 }
 
 .language ul {
@@ -300,8 +300,8 @@ a.en::before{
   background-image: url('https://flagsapi.com/GB/shiny/64.png');
 }
 
-a.pt::before{
-  background-image: url('https://flagsapi.com/PT/flat/64.png');
+a.es::before{
+  background-image: url('https://flagsapi.com/ES/flat/64.png');
 }
 
 a.fr::before{
@@ -426,6 +426,11 @@ a.fr::before{
   color: #00204a;
 }
 
+
+/* .slider_section .detail-box h1 span:last-child{
+  color: #BE7E08;
+} */
+
 .slider_section .detail-box h1 {
   font-size: 3rem;
   font: italic small-caps bold 24px/30px; font-family: Pussycat, Algerian, Broadway, fantasy;
@@ -452,7 +457,11 @@ a.fr::before{
   text-align: center;
   width: 165px;
 }
-.slider_section .detail-box span { color: #BE7E08; text-transform: lowercase;}
+.slider_section .detail-box span:last-child { 
+  color: #BE7E08; 
+  text-transform: lowercase;
+}
+
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
@@ -548,9 +557,9 @@ a.fr::before{
   background-color: #BE7E08;
 }
 
-.service_section {
+/* .service_section {
   position: relative;
-}
+} */
 
 .service_section .box {
   display: -webkit-box;
@@ -591,6 +600,10 @@ a.fr::before{
   max-height: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.service_section .heading_container h2 .first{
+  color: #000;
 }
 
 .service_section .box .detail-box h5 {
@@ -644,6 +657,10 @@ a.fr::before{
   margin-bottom: 45px;
 }
 
+.about_section .heading_container h2 span:first-child{
+  color: white;
+}
+
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -653,10 +670,6 @@ a.fr::before{
 .about_section .first {
   font-size: xx-large;
   font-weight: 900;
-}
-
-.about_section .first .us {
-  color: red;
 }
 
 .about_section .img-box img {
@@ -738,6 +751,14 @@ a.fr::before{
   color: red;
 }
 
+.why_section .heading_container .second span:first-child{
+  color: rgb(0, 0, 0);
+}
+
+.why_section .heading_container h2 span:first-child {
+  color: black;
+}
+
 .why_section .box .img-box img {
   width: 55px;
   height: auto;
@@ -747,6 +768,10 @@ a.fr::before{
 .why_section .box h5 {
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.why_section .heading_container .second span .us{
+  color: white;
 }
 
 .why_section .box p {
@@ -778,6 +803,7 @@ a.fr::before{
   background-color: #007fa4;
 }
 
+
 /*team section */
 .team_section {
   text-align: center;
@@ -800,6 +826,7 @@ a.fr::before{
   color: red;
 }
 
+
 .team .heading_center .three span.team::first-letter{
   text-transform: uppercase;
 }
@@ -807,6 +834,12 @@ a.fr::before{
 .team_section .team_container {
   padding: 0 15px;
 }
+
+.team_section .heading_container .hero span:first-child {
+  color: white;
+}
+
+
 
 .team_section .team_container .box {
   padding: 35px 0 0 0;

@@ -37,7 +37,7 @@ $(function(){
     $(".language-selected").removeClass("change-fr");
     $(".language-selected").removeClass("change-pt");
     $(".language-selected").addClass("change-es");
-    $('.language .language-selected').text('SPA');
+    $('.language .language-selected').text('ESP');
    })
 })
 
@@ -79,27 +79,25 @@ var liveprice = {
   console.log(x1.data.slice(0,20));
 
   var y1 = x1.data.slice(0,20);
-  btc.innerHTML = parseFloat(y1[0].quote.USD.price.toFixed(3));
-  ether.innerHTML = parseFloat(y1[1].quote.USD.price.toFixed(3));
-  teth.innerHTML = parseFloat(y1[2].quote.USD.price.toFixed(3));
-  bnb.innerHTML = parseFloat(y1[3].quote.USD.price.toFixed(3));
-  usdc.innerHTML = parseFloat(y1[4].quote.USD.price.toFixed(3));
-  xrp.innerHTML = parseFloat(y1[5].quote.USD.price.toFixed(3));
-  cardano.innerHTML = parseFloat(y1[6].quote.USD.price.toFixed(3));
-  doge.innerHTML = parseFloat(y1[7].quote.USD.price.toFixed(3));
-  polygon.innerHTML = parseFloat(y1[8].quote.USD.price.toFixed(3));
-  solona.innerHTML = parseFloat(y1[9].quote.USD.price.toFixed(3));
-  tron.innerHTML = parseFloat(y1[10].quote.USD.price.toFixed(3));
-  litecoin.innerHTML = parseFloat(y1[11].quote.USD.price.toFixed(3));
-  polkadot.innerHTML = parseFloat(y1[12].quote.USD.price.toFixed(3));
-  binance.innerHTML = parseFloat(y1[13].quote.USD.price.toFixed(3));
+  btc.innerHTML = parseFloat(y1[0].quote.USD.price.toFixed(5));
+  ether.innerHTML = parseFloat(y1[1].quote.USD.price.toFixed(5));
+  teth.innerHTML = parseFloat(y1[2].quote.USD.price.toFixed(5));
+  bnb.innerHTML = parseFloat(y1[3].quote.USD.price.toFixed(5));
+  usdc.innerHTML = parseFloat(y1[4].quote.USD.price.toFixed(5));
+  xrp.innerHTML = parseFloat(y1[5].quote.USD.price.toFixed(5));
+  cardano.innerHTML = parseFloat(y1[6].quote.USD.price.toFixed(5));
+  doge.innerHTML = parseFloat(y1[7].quote.USD.price.toFixed(5));
+  polygon.innerHTML = parseFloat(y1[8].quote.USD.price.toFixed(5));
+  solona.innerHTML = parseFloat(y1[9].quote.USD.price.toFixed(5));
+  tron.innerHTML = parseFloat(y1[10].quote.USD.price.toFixed(5));
+  litecoin.innerHTML = parseFloat(y1[11].quote.USD.price.toFixed(5));
+  polkadot.innerHTML = parseFloat(y1[12].quote.USD.price.toFixed(5));
+  binance.innerHTML = parseFloat(y1[13].quote.USD.price.toFixed(5));
   shiba.innerHTML = parseFloat(y1[14].quote.USD.price.toFixed(3));
-  dai.innerHTML = parseFloat(y1[15].quote.USD.price.toFixed(3));
-  avalanche.innerHTML = parseFloat(y1[16].quote.USD.price.toFixed(3));
-  wbtc.innerHTML = parseFloat(y1[17].quote.USD.price.toFixed(3));
-  chainlink.innerHTML = parseFloat(y1[18].quote.USD.price.toFixed(3));
-  unus.innerHTML = parseFloat(y1[19].quote.USD.price.toFixed(3));
-});
-
-        
+  dai.innerHTML = parseFloat(y1[15].quote.USD.price.toFixed(5));
+  avalanche.innerHTML = parseFloat(y1[16].quote.USD.price.toFixed(5));
+  wbtc.innerHTML = parseFloat(y1[17].quote.USD.price.toFixed(5));
+  chainlink.innerHTML = parseFloat(y1[18].quote.USD.price.toFixed(5));
+  unus.innerHTML = parseFloat(y1[19].quote.USD.price.toFixed(5));
+});       
 
